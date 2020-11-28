@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MQTT Client for Facial Detection</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+
+    <body onload="setUpMQTTClient();" style="font-family: Arial, Helvetica, sans-serif;">
+        <h3>MQTT Client for Facial Detection</h3>
+
+        <p>Below, you will find the results (Expressions detected and Labelled image) of the Facial Detection API as they are published.</p>
+        <br/>
+
+        <!--div below will be updated with received messages (labelled images and expressions detected)-->
+        <div id="resultsDisplay"></div>
+
+        
+        <script src="mqtt_client_JS.js"></script>
+    </body>
+
+</html>
